@@ -1,4 +1,4 @@
-# Privacy-First Fedora Dotfiles
+# Fedora Dev
 
 A rock-solid, minimal-bloat, keyboard-driven starting point for Fedora Workstation
 with strong privacy and security defaults.
@@ -9,9 +9,9 @@ with strong privacy and security defaults.
 
 ## Why this exists
 
-I have been a Linux user for over a decade. Omedora was inspired by David Heinemeier Hansson's project, Omarchy. DHH's sense of aesthetics is inspiring, but I wanted something closer to my own principles: stable, predictable, focused, and pragmatic.
+I have been a Linux user for over a decade. Fedora Dev is the distillation of what I want from a work machine: stable, predictable, focused, and pragmatic.
 
-The desktop is becoming even more clearly a workstation. With AI, a computer is a place for deep work and productivity, not for entertainment or social media. Phones are normally the better choice for consumption. Omedora reflects that: it removes consumption-oriented defaults and keeps the tools you need to build, write, and think.
+The desktop is becoming even more clearly a workstation. With AI, a computer is a place for deep work and productivity, not for entertainment or social media. Phones are normally the better choice for consumption. Fedora Dev reflects that: it removes consumption-oriented defaults and keeps the tools you need to build, write, and think.
 
 I chose Fedora over Arch for everyday work and productivity. Fedora stays current while providing a predictable release cycle, solid testing, and a clear upgrade path. For a business owner and software developer, that stability matters more than bleeding-edge packages.
 
