@@ -1,0 +1,8 @@
+# Keep the shared repo to just the Fedora setup + the dotfiles it stows.
+# Patterns are anchored to the repo root with a leading slash.
+/astro-docs/
+/nvim/
+/ROADMAP.md
+/.agents/
+/.claude/
+/skills-lock.json

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =============================================================================
+# Modular Fedora Setup Script
+# =============================================================================
+# Installs apps, tools, and dev environments conditionally.
+# It asks for your sudo password once and caches it for the session.
+# =============================================================================
+
+SETUP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SETUP_LIB_DIR="${SETUP_DIR}/lib"
+
+# shellcheck source=../lib/menu.sh disable=SC1091
+source "${SETUP_LIB_DIR}/menu.sh"
+
+# Do not run as root. The modules call sudo themselves and apply per-user
+# settings (gsettings, dconf, stow, mise); running the whole thing as root
+# would target root's profile instead of yours. Override with SETUP_ALLOW_ROOT=1.
+if [[ ${EUID:-$(id -u)} -eq 0 && -z "${SETUP_ALLOW_ROOT:-}" ]]; then
+  log_error "Do not run this as root or with sudo; run it as your normal user."
+  log_info "It will prompt for sudo when needed. To override: SETUP_ALLOW_ROOT=1 $0 $*"
+  exit 1
+fi
+
+main "$@"

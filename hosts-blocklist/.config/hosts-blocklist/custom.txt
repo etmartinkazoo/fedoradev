@@ -1,0 +1,3 @@
+# Custom blocked domains (one per line)
+# Example:
+# example.com
